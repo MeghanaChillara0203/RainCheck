@@ -23,9 +23,9 @@ export const WeatherElements: React.FC = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setSelectedElement(element.id)}
-          className={`${element.color} py-2 px-3 rounded-lg text-sm font-medium text-center transition-all ${
+          className={`${element.color} py-2 px-3 rounded-lg text-sm font-medium text-slate-800 text-center transition-all ${
             selectedElement === element.id 
-              ? 'ring-2 ring-blue-600 shadow-md' 
+              ? 'ring-2 ring-sky-400 shadow-lg brightness-110' 
               : 'opacity-80 hover:opacity-100'
           }`}
         >

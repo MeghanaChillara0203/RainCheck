@@ -111,7 +111,7 @@ export const WeatherMap: React.FC = () => {
               closeOnClick={false}
               className="z-10"
             >
-              <div className="p-2 max-w-[250px]">
+              <div className="p-2 max-w-[250px] text-slate-700">
                 <h3 className="font-semibold text-sm">{selectedLocation.name}, {selectedLocation.state}, {selectedLocation.country}</h3>
                 <p className="text-sm">Partly cloudy: Light wind (11.2 kph N)</p>
                 <p className="text-sm">Temp: {weatherData?.temp || '18.9'} °C (feels like {weatherData?.feelsLike || '18.9'} °C)</p>
@@ -127,15 +127,15 @@ export const WeatherMap: React.FC = () => {
 
         {/* Zoom controls */}
         <div className="absolute bottom-4 right-4 z-10">
-          <div className="bg-white p-1 shadow-md rounded-md">
+          <div className="bg-slate-700 p-1 shadow-lg rounded-md flex flex-col space-y-1">
             <button 
-              className="w-7 h-7 flex items-center justify-center text-gray-700 hover:bg-gray-100 rounded"
+              className="w-8 h-8 flex items-center justify-center text-slate-200 hover:bg-slate-600 rounded transition-colors"
               onClick={() => setViewState({ ...viewState, zoom: viewState.zoom + 1 })}
             >
               +
             </button>
             <button 
-              className="w-7 h-7 flex items-center justify-center text-gray-700 hover:bg-gray-100 rounded"
+              className="w-8 h-8 flex items-center justify-center text-slate-200 hover:bg-slate-600 rounded transition-colors"
               onClick={() => setViewState({ ...viewState, zoom: viewState.zoom - 1 })}
             >
               -
