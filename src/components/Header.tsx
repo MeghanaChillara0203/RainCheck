@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
           <h1 className="text-2xl font-bold text-slate-100 ml-2">Your Local Algo</h1>
         </div>
         <p className="text-sky-400 italic text-center md:text-right text-sm">
-          We don't predict the weather—we tell you which forecast is best suited for you, and how sure we are!!
+          <h3>We don't predict the weather—we tell you which forecast is best suited for you, and how sure we are!!</h3>
         </p>
       </div>
     </header>

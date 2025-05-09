@@ -20,7 +20,7 @@ export const ModelComparison: React.FC = () => {
       <div className="flex flex-col lg:flex-row bg-gradient-to-r from-sky-600 via-purple-600 to-pink-600 rounded-2xl shadow-2xl p-6 text-white items-center justify-between transform hover:scale-[1.02] transition duration-300">
         <div className="mb-4 lg:mb-0 lg:w-1/2 text-center lg:text-left">
           <h2 className="text-3xl lg:text-4xl font-bold mb-2 tracking-wide">
-            Based on AI confidence intervals and live weather data, we recommend
+            Based on Confidence Intervals and live weather data, we recommend
           </h2>
           <h1 className="text-6xl font-extrabold tracking-tight">{bestModel}</h1>
           <p className="mt-3 text-lg opacity-90">as the most accurate model for your location.</p>
@@ -53,17 +53,17 @@ export const ModelComparison: React.FC = () => {
           .map(([key, url]) => (
             url && (
               <div
-                key={key}
-                className="bg-slate-800 rounded-2xl shadow-xl p-4 transform hover:scale-[1.02] transition duration-300 border border-slate-700 hover:border-sky-500"
+                key={`${key}-${url}`}  // <- ADD url into the key to force React update!
+                className="bg-white rounded-2xl shadow-xl p-4 transform hover:scale-[1.02] transition duration-300"
               >
-                <h3 className="text-xl font-bold text-center mb-3 text-sky-400 uppercase tracking-wider">
+                <h3 className="text-xl font-bold text-center mb-2 text-gray-800 uppercase tracking-wider">
                   {key.replace('_', ' ')}
                 </h3>
-                <img src={`<span class="math-inline">\{url\}?t\=</span>{Date.now()}`} alt={key} className="w-full rounded-lg border border-slate-600" />
-                <p className="mt-3 text-sm text-slate-400 text-center">{explanations[key]}</p>
+                <img src={url} alt={key} className="w-full rounded-lg" />
+                <p className="mt-3 text-sm text-gray-500 text-center">{explanations[key]}</p>
               </div>
             )
-          ))}
+        ))}
       </div>
     </div>
   );
