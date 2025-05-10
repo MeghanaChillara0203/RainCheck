@@ -1,4 +1,4 @@
-## 🌦 RainCheck — AI-Powered Weather Model Comparator
+## 🌦 RainCheck — ML-Powered Weather Model Comparator
 
 ### 🏔 Overview
 
