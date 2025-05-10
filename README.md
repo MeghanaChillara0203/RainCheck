@@ -19,12 +19,12 @@ It empowers outdoor enthusiasts, farmers, city planners, and everyday users to m
 
 ### 🌟 Project Goals
 
-✅ Compare multiple leading weather forecast models (ECMWF, GFS, HRRR, NAM, WRF)
-✅ Calculate key evaluation metrics (e.g., Mean Absolute Error)
-✅ Visualize predictions + residuals over time
-✅ Provide location-based model recommendations
-✅ Deliver an interactive, map-driven web interface
-✅ Improve trust in weather forecasts by surfacing **not just what will happen, but how sure we are**
+###### ✅ Compare multiple leading weather forecast models (ECMWF, GFS, HRRR, NAM, WRF)
+###### ✅ Calculate key evaluation metrics (e.g., Mean Absolute Error)
+###### ✅ Visualize predictions + residuals over time
+###### ✅ Provide location-based model recommendations
+###### ✅ Deliver an interactive, map-driven web interface
+###### ✅ Improve trust in weather forecasts by surfacing **not just what will happen, but how sure we are**
 
 ---
 
